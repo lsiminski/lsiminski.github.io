@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Blog</title>
+	</head>
+	<body>
+		<p>I ♡ Unique Navigation</p>
+		
+		<p>I stumbled upon this website a while ago and saved it to my bookmarks. While going through my bookmarks on my laptop, I was reminded of why I love this web design so much...</p>
+		
+		<p><img src="images/post00101.jpg"><br>
+		website name: Flourish, brand stylists<br>
+		url: www.flourishstudios.co.uk</p>
+		
+		<p><img src="images/post00104.jpg"><br>
+		When you hover over the top navigation, there's a different illustration displayed, starting the viewer off with a cute, friendly welcome to the website.</p>
+		
+		<p><img src="images/post00102.jpg"><Br>
+		When you scroll past the header image, there are smaller images underneath that also link to different things on the website. Some of these images are just one link, and some have multiple links within the image.</p>
+		
+		<p><img src="images/post00103.jpg"><br>
+		Additionally, under those images, the display of their client names is very neat and clean, and serves as another form of navigation.</p>
+		
+		<p><img src="images/post00105.jpg"><br>
+		To end the design with a bang, their footer grid is very organized and just in case you missed a link somehow throughout the homepage navigation, most of the links you need to know are displayed at the footer.</p>
+		
+		<p>My description doesn't do the website justice, so you should definitely check it out and see for yourself!</p>
+	</body>
+</html>
