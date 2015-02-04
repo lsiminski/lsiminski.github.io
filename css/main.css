@@ -1,13 +1,45 @@
-body {}
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #222222;
+}
+
+h1 {
+	font-size: 27px;
+	letter-spacing: 0.05em;
+	color: #222222;
+}
+
+p {
+	padding-bottom: 15px;
+	font-size: 12px;
+	letter-spacing: 0.06em;
+	line-height: 20px;
+	color: #222222;
+}
+
+img {
+	padding-right: 10px;
+}
+
+.container {
+	width: 600px;
+	margin: 150px auto 0 auto;
+	padding: 0 5%;
+}
+
+.now a {
+	color: #222222;
+	border-bottom: solid 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
 
 a {
-    text-decoration: none;
-	color: #f00;
+	opacity: 1;
+	transition: all .3s linear;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: green;
+	opacity: .3;
 }
-
-img {}
