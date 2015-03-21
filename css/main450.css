@@ -1,0 +1,260 @@
+/*
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+——————————————— General and Index ———————————————
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #222222;
+}
+
+h1 {
+	font-size: 22px;
+	letter-spacing: 0.02em;
+	color: #222222;
+	text-transform: uppercase;
+}
+
+p {
+	padding-bottom: 15px;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+	line-height: 21px;
+	color: #222222;
+}
+
+b {
+	padding-bottom: 15px;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	color: #222222;
+}
+
+nav img {
+	padding-right: 20px;
+}
+
+.container {
+	width: 96%;
+	margin: 10px auto 0 auto;
+}
+
+.now a {
+	color: #222222;
+	border-bottom: solid 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+a {
+	color: #222222;
+	text-decoration: none;
+	opacity: 1;
+	transition: all .3s linear;
+}
+
+nav a:hover {
+	opacity: .3;
+}
+
+nav {
+	display: inline-block;
+	padding: 7px 0 35px 0;
+}
+
+.name {
+	width: 55%;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.links {
+	display: none;
+	/*
+opacity: 1;
+	width: 30%;
+	text-align: center;
+	margin-left: -3%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	padding-left: 25px;
+*/
+}
+
+.about {
+	width: 35%;
+	text-align: right;
+	float: right;
+	text-transform: uppercase;
+}
+
+.work {
+	display: inline-block;
+	padding-top: 2%;
+	padding-bottom: 50px;
+}
+
+.work .column {
+	background-color: none;
+	width: 94%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+/*
+.work .column + .column {
+	margin: 0 3% 0 3%;
+}
+*/
+
+
+.work .column img {
+	width: 100%;
+	padding-bottom: 18%;
+}
+
+.column a:hover {
+	opacity: .75;
+}
+
+
+/*
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+————————————————— Project Pages —————————————————
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+*/
+
+.project {
+	width: 94%;
+	margin: 30px auto 0 auto;
+	padding-bottom: 50px;
+}
+
+.project img {
+	width: 100%;
+}
+
+.project a {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	color: #222222;
+	font-weight: 700;
+	opacity: 1;
+	transition: all .3s linear;
+}
+
+.project a:hover {
+	opacity: .3;
+}
+
+.project img + img {
+	padding-top: 20px;
+}
+
+.description {
+	padding: 0 0 10px 0;
+}
+
+.back {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	color: #222222;
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+.back a {
+	opacity: 1;
+	transition: all .3s linear;
+}
+
+.back a:hover {
+	opacity: .3;
+}
+
+.description a {
+	text-transform: uppercase;
+	font-size: 13.5px;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	color: #222222;
+	font-weight: 700;
+	padding-top: 20px;
+	opacity: 1;
+	transition: all .3s linear;
+}
+
+.description a:hover {
+	opacity: .3;
+}
+
+
+/*
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+————————————————— Project Pages —————————————————
+—————————————————————————————————————————————————
+—————————————————————————————————————————————————
+*/
+
+.aboutme a {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	color: #222222;
+	font-weight: 700;
+	opacity: 1;
+	transition: all .3s linear;
+}
+
+.aboutme a:hover {
+	opacity: .3;
+}
+
+.bio {
+	display: inline-block;
+	padding-bottom: 50px;
+	width: 100%;
+	margin: -14px auto 0 auto;
+}
+
+.bio .column {
+	background-color: none;
+	width: 100%;
+	float: left;
+}
+
+.bio .column + .column {
+	width: 100%;
+	margin: 0;
+	float: right;
+}
+
+.bio .column-dos {
+	padding-left: 0;
+	margin: 0;
+}
+
+.bio img {
+	padding-top: 15px;
+	padding-bottom: 5px;
+
+}
+
+.bio p + p {
+	padding-top: 0;
+}
