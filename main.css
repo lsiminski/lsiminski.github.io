@@ -1,4 +1,4 @@
-@import url("phone.css");
+@import url("phone.css") (min-width: 1em);
 
 @media screen and (min-width: 40.5em) {
 
