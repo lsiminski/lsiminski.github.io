@@ -1,3 +1,7 @@
+@import url("phone.css");
+
+@media screen and (min-width: 40.5em) {
+
 html { 
   background: url(http://i62.tinypic.com/2m5ndsh.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -96,4 +100,6 @@ a:hover {
 	font-weight: 400;
 	letter-spacing: 0.8px;
 	text-align: center;
+}
+
 }
