@@ -1,46 +1,94 @@
 <!doctype html>
-<html>
-
-
-
-<head>
-
-	<title>Lauren Siminski</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="main.css">
-	<!-- <link rel="stylesheet" href="phone.css"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-	<!--
-<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
-	<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen and (min-width: 40.5em)" />
-	<!--[if (lt IE 9)&(!IEMobile)]>
-	<link rel="stylesheet" type="text/css" href="enhanced.css" />
-	<![endif]-->
-	<link rel="icon" type="image/png" href="http://i61.tinypic.com/205a9vt.png" />
-
-</head>
-
-
-
-<body>
-	<div class="container">
-			<div class="intro">Hey there, Hi, Hello. I'm</div>
-			<div class="title"><a href="http://www.laurensiminski.com">Lauren Siminski</a></div>
-			<div class="ls"><img src="http://i62.tinypic.com/v4nvw3.gif"></div>
-			<div class="view">you can <a href="https://www.behance.net/laurensiminski" target="_blank">view my work</a> on</div>
-			<div class="links">
-			<ul>
-				<li><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="http://i60.tinypic.com/ao1i5c.png"></a><span class="invisible">......</span></li>
-				<li><a href="https://instagram.com/siminski/" target="_blank"><img src="http://i60.tinypic.com/14tn51t.png"></a><span class="invisible">......</span></li>
-				<li><a href="https://twitter.com/laurensiminski" target="_blank"><img src="http://i61.tinypic.com/qyvack.png"></a><span class="invisible">......</span></li>
-				<li><a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="http://i60.tinypic.com/2m6526g.png"></a></li>
-			</ul>
-			</div>
-			<div class="resume">& also <a href="http://laurensiminski.com/Lauren%20Siminski_resume.pdf" download>download my resume</a></div>
-	</div>
+<html lang="en">
 	
-</body>
+	<head>
+	
+		<!-- IDK WHAT THIS IS -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+		
+		<!-- TITLE -->
+		<title>Lauren Siminski</title>
+		
+		<!-- FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- LINKS -->
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+		
+		<!-- FAVICON -->
+		<link rel="icon" type="image/png" href="http://i61.tinypic.com/205a9vt.png" />
+		
+		<!-- IDK WHAT THIS IS EITHER -->
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		
+	</head>
 
+	<body class="random">
+    	
+    	<div class="logo">
+    		<a href="index.html"><img src="http://s15.postimg.org/aslt5iym3/image.gif"></a>
+    	</div>
+    	
+    	<div class="links">
+			<ul>
+			<li><a href="logos.html">Logos</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="socialmedia">
+			<ul>
+			<li><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="http://i66.tinypic.com/a9qolk.png"></a></li>
+			<li><a href="https://www.instagram.com/siminski/"target="_blank"><img src="http://i64.tinypic.com/1088lt4.png"></a></li>
+			<li><a href="https://twitter.com/laurensiminski"target="_blank"><img src="http://i68.tinypic.com/wt9jis.png"></a></li>
+			<li><a href="https://www.linkedin.com/in/laurensiminski"target="_blank"><img src="http://i63.tinypic.com/ms0yn5.png"></a></li>
+			</ul>
+		</div>
+		
+		<div id="container" class="container">
+		<ul id="scene" class="scene">
+			<!--
+<li class="layer" data-depth="1.80"><img src="img/par_there.png"></li>
+			<li class="layer" data-depth="2.40"><img src="img/par_hey.png"></li>
+-->
+			<li class="layer" data-depth="0.60"><img src="img/par_circles2.png"></li>
+			<li class="layer" data-depth="1.80"><img src="img/par_circles1.png"></li>
+			<li class="layer" data-depth="1.00"><img src="img/par_squiggle.png"></li>
+			<li class="layer" data-depth="0.05"><img src="img/par_hello.png"></li>
+		</ul>
+		</div>
 
+		<!-- PROBABLY IMPORTANT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script>
+			$.getJSON('bg-images.json', function(data) { 
+			
+			  console.log(data.bgImages.length);    
+			  var randomImage = data.bgImages[Math.floor(Math.random()*data.bgImages.length)];
+			  console.log(randomImage);
+			  var bgImage = randomImage.src;
+			  var bgClass = randomImage.imgClass;
+			  $( "body" ).addClass( bgClass );
+			});
+		</script>
+		
+		<script src="scripts/jquery.js"></script>
+	<script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	$('#scene').parallax();
+
+	</script>
+
+  </body>
 
 </html>
