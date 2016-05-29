@@ -1,2 +1,0 @@
-lsiminski.github.io
-===================
