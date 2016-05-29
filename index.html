@@ -10,7 +10,7 @@
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="styles/styles.css"/> -->
 		
 		<!-- TITLE -->
 		<title>Lauren Siminski</title>
@@ -19,7 +19,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		
 		<!-- LINKS -->
-		<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+		<!-- <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" /> -->
+		<link rel="stylesheet" href="css/style.css">
 		
 		<!-- FAVICON -->
 		<link rel="icon" type="image/png" href="http://i61.tinypic.com/205a9vt.png" />
@@ -28,48 +29,71 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+			$(".loader").fadeOut("medium");
+		})
+		</script>
+		
 	</head>
 
 	<body class="random">
-    	
-    	<div class="logo">
-    		<a href="index.html"><img src="img/ls.gif"></a>
-    	</div>
-    	
-    	<div class="links">
-			<ul>
-			<li><a href="logos.html">Logos</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="about.html">About</a></li>
-			</ul>
-		</div>
-		
-		<div class="socialmedia">
-			<ul>
-			<li><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="http://i66.tinypic.com/a9qolk.png"></a></li>
-			<li><a href="https://www.instagram.com/siminski/"target="_blank"><img src="http://i64.tinypic.com/1088lt4.png"></a></li>
-			<li><a href="https://twitter.com/laurensiminski"target="_blank"><img src="http://i68.tinypic.com/wt9jis.png"></a></li>
-			<li><a href="https://www.linkedin.com/in/laurensiminski"target="_blank"><img src="http://i63.tinypic.com/ms0yn5.png"></a></li>
-			</ul>
-		</div>
-		
-		<div id="container" class="container">
+	
+	<div class="loader"></div>
+	
+	<div class="border-top"></div>
+	<div class="border-right"></div>
+	<div class="border-bottom"></div>
+	<div class="border-left"></div>
+	
+	<div class="copyright">© 2016 – Lauren Siminski</div>
+	
+	<div id="container" class="container">
 		<ul id="scene" class="scene">
-			<!--
-<li class="layer" data-depth="1.80"><img src="img/par_there.png"></li>
-			<li class="layer" data-depth="2.40"><img src="img/par_hey.png"></li>
--->
 			<li class="layer" data-depth="0.60"><img src="img/par_circles2.png"></li>
 			<li class="layer" data-depth="1.80"><img src="img/par_circles1.png"></li>
 			<li class="layer" data-depth="1.00"><img src="img/par_squiggle.png"></li>
 			<li class="layer" data-depth="0.05"><img src="img/par_hello.png"></li>
 		</ul>
-		</div>
+	</div>
+  
+<div id="o-wrapper" class="o-wrapper">
+
+  <main class="content">
+  <div id="c-button--slide-top" class="c-button"><img src="img/menu.png"></div>
+  <a href="portfolio.html" class="logo-name"><img src="img/laurensiminski.png"></a>
+  <div class="gray-bg"></div>
+  <div class="social"><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="img/be.png"></a> <a href="https://www.instagram.com/siminski/" target="_blank"><img src="img/ig.png"></a> <a href="https://twitter.com/laurensiminski" target="_blank"><img src="img/tw.png"></a> <a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="img/li.png"></a></div>
+  </main><!-- /content -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+
+	<a href="index.html" class="logo"><img src="img/ls.gif"></a>
+
+	<div class="rotated-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="portfolio.html"><span class="push-left">Portfolio</span></a></li>
+			<li><a href="branding.html">Branding</a></li>
+			<li><a href="digital.html">Digital</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><div class="social-mobile"><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="img/be.png"></a> <a href="https://www.instagram.com/siminski/" target="_blank"><img src="img/ig.png"></a> <a href="https://twitter.com/laurensiminski" target="_blank"><img src="img/tw.png"></a> <a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="img/li.png"></a></div></li>
+	</div>
+	
+	<a href="#" class="c-menu__close"><img src="img/menu.png"></a>
+  
+</nav><!-- /c-menu slide-top -->
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
 
 		<!-- PROBABLY IMPORTANT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="js/dist/menu.js"></script>
 		<script>
+		
 			$.getJSON('bg-images.json', function(data) { 
 			
 			  console.log(data.bgImages.length);    
@@ -79,9 +103,24 @@
 			  var bgClass = randomImage.imgClass;
 			  $( "body" ).addClass( bgClass );
 			});
+			
+			var slideTop = new Menu({
+			  wrapper: '#o-wrapper',
+			  type: 'slide-top',
+			  menuOpenerClass: '.c-button',
+			  maskId: '#c-mask'
+			});
+
+			var slideTopBtn = document.querySelector('#c-button--slide-top');
+  
+			  slideTopBtn.addEventListener('click', function(e) {
+			  e.preventDefault;
+			  slideTop.open();
+			});
+			
 		</script>
 		
-		<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.js"></script>
 	<script src="deploy/jquery.parallax.js"></script>
 	<script>
 

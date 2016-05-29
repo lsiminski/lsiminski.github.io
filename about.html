@@ -12,10 +12,11 @@
 		<title>Lauren Siminski</title>
 		
 		<!-- FONTS -->
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 		
 		<!-- LINKS -->
-		<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+		<!-- <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" /> -->
+		<link rel="stylesheet" href="css/style.css">
 		
 		<!-- FAVICON -->
 		<link rel="icon" type="image/png" href="http://i61.tinypic.com/205a9vt.png" />
@@ -24,69 +25,97 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+			$(".loader").fadeOut("medium");
+		})
+		</script>
+		
+		
 	</head>
 
 	<body>
-    	
-    	<div class="logo">
-    		<a href="index.html"><img src="img/ls.gif"></a>
-    	</div>
-    	
-    	<div class="links">
-			<ul>
-			<li><a href="logos.html">Logos</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
+	
+	<div class="loader"></div>
+	
+	<div class="border-top"></div>
+	<div class="border-right"></div>
+	<div class="border-bottom"></div>
+	<div class="border-left"></div>
+	
+	<div class="copyright">© 2016 – Lauren Siminski</div>
+	
+	<div class="fade"></div>
+	 
+  <div class="projects">
+				<ul>
+				<li><p><span class="bigger-title">Hello, I’m Lauren.</span><img src="img/smiley.jpg"></p></li>
+				<li><img src="img/me.jpg"></li>
+				<li><p>I’m a designer and MICA graduate. I get genuinely excited whenever I see a dog (literally, every time) or recognize a typeface. I like problem solving and working with my hands. My daily fuel is coffee and an impossible dream to one day know how to do everything.</p>
+				<p>I’m still learning and I’m okay with that.</p></li>
+				<li><p><span class="smaller-title">Let’s chat.</span><br>lsiminski@mica.edu<br>443.642.0800</p></li>
+				<li><p><span class="smaller-title"><a href="Lauren Siminski_Resume.pdf" download>Download My Resume</a></span></p></li>
+				</ul>
+				<!--
+<div class="lets-get"><span class="smaller-title">Let’s get social.</span></div>
+				<div class="social-icons"><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="img/be.png"></a> <a href="https://www.instagram.com/siminski/" target="_blank"><img src="img/ig.png"></a> <a href="https://twitter.com/laurensiminski" target="_blank"><img src="img/tw.png"></a> <a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="img/li.png"></a></div>
+				<div class="social-pics"><img src="img/soc-1.jpg"><img src="img/soc-2.jpg"><img src="img/soc-5.jpg"><img src="img/soc-4.jpg"><img src="img/soc-3.jpg"></div>
+-->
+  </div>
+		    
+		    <div id="o-wrapper" class="o-wrapper">
+
+  <main class="content">
+  <div id="c-button--slide-top" class="c-button"><img src="img/menu.png"></div>
+  <a href="portfolio.html" class="logo-name"><img src="img/laurensiminski.png"></a>
+  <div class="gray-bg"></div>
+  <div class="social"><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="img/be.png"></a> <a href="https://www.instagram.com/siminski/" target="_blank"><img src="img/ig.png"></a> <a href="https://twitter.com/laurensiminski" target="_blank"><img src="img/tw.png"></a> <a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="img/li.png"></a></div>
+  </main><!-- /content -->
+
+</div><!-- /o-wrapper -->
+
+<nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+
+	<a href="index.html" class="logo"><img src="img/ls.gif"></a>
+
+	<div class="rotated-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="portfolio.html"><span class="push-left">Portfolio</span></a></li>
+			<li><a href="branding.html">Branding</a></li>
+			<li><a href="digital.html">Digital</a></li>
 			<li><a href="about.html">About</a></li>
-			</ul>
-		</div>
-		
-		<div class="socialmedia">
-			<ul>
-			<li><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="http://i66.tinypic.com/a9qolk.png"></a></li>
-			<li><a href="https://www.instagram.com/siminski/"target="_blank"><img src="http://i64.tinypic.com/1088lt4.png"></a></li>
-			<li><a href="https://twitter.com/laurensiminski"target="_blank"><img src="http://i68.tinypic.com/wt9jis.png"></a></li>
-			<li><a href="https://www.linkedin.com/in/laurensiminski"target="_blank"><img src="http://i63.tinypic.com/ms0yn5.png"></a></li>
-			</ul>
-		</div>
-		
-    	
-    	<div class="container-1-2">
-    	<div class="col">
-    		<div class="col-1">
-    			<img src="img/portrait.png">
-    		</div>
-    		<div class="col-2">
-    			<br><br>
-    			<h2>I'm Lauren</h2>
-    			<span class="highlight">I like learning new things<br>& working with my hands.</span><br>
-    			<img src="img/underline.png">
-    			<p>MICA 2016 (almost) Graduate<br>Dog, DIY, & Typography Enthusiast</p>
-				<p><span class="col-title">Contact</span><br>lsiminski@mica.edu<br>443.642.0800</p>
-				<p><span class="col-title"><a href="http://laurensiminski.com/Lauren%20Siminski_Resume.pdf" download>Download Resume</a></span></p>
-    		</div>
-    	</div>
-		</div>
-		
-		<div class="container-1-02">
-			<div class="col2">
-    		<div class="col2-1">
-    			<img src="img/portrait2.png">
-    		</div>
-    		<div class="col2-2">
-    			<h2>I'm Lauren</h2>
-    			<span class="highlight">I like learning new things<br>& working with my hands.</span><br>
-    			<img src="img/underline.png">
-    			<p>MICA 2016 (almost) Graduate<br>Dog, DIY, & Typography Enthusiast</p>
-				<p><span class="col-title">Contact</span><br>lsiminski@mica.edu<br>443.642.0800</p>
-				<p><span class="col-title"><a href="http://laurensiminski.com/Lauren%20Siminski_Resume.pdf" download>Download Resume</a></span></p>
-    		</div>
-    	</div>
-		</div>
+			<li><div class="social-mobile"><a href="https://www.behance.net/laurensiminski" target="_blank"><img src="img/be.png"></a> <a href="https://www.instagram.com/siminski/" target="_blank"><img src="img/ig.png"></a> <a href="https://twitter.com/laurensiminski" target="_blank"><img src="img/tw.png"></a> <a href="https://www.linkedin.com/in/laurensiminski" target="_blank"><img src="img/li.png"></a></div></li>
+	</div>
+	
+	<a href="#" class="c-menu__close"><img src="img/menu.png"></a>
+  
+</nav><!-- /c-menu slide-top -->
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
 
 		<!-- PROBABLY IMPORTANT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script src="list.js"></script>
+		<script src="js/dist/menu.js"></script>
+		<script>
+		
+			var slideTop = new Menu({
+			  wrapper: '#o-wrapper',
+			  type: 'slide-top',
+			  menuOpenerClass: '.c-button',
+			  maskId: '#c-mask'
+			});
+
+			var slideTopBtn = document.querySelector('#c-button--slide-top');
+  
+			  slideTopBtn.addEventListener('click', function(e) {
+			  e.preventDefault;
+			  slideTop.open();
+			});
+
+		</script>
 
   </body>
 

@@ -1,43 +1,51 @@
-var gulp = require('gulp'),
-    plugins = require("gulp-load-plugins")();
+// require gulp
+var gulp = require('gulp');
 
-function build(stream, file) {
-  return stream
-    .pipe(plugins.jshint())
-    .pipe(plugins.jshint.reporter('jshint-stylish'))
-    .pipe(plugins.concat(file))
-    .pipe(gulp.dest('deploy'))
-    .pipe(plugins.rename({suffix: '.min'}))
-    .pipe(plugins.uglify())
-    .pipe(gulp.dest('deploy'));
-}
+// require plugins
+var autoprefixer = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
+var gutil = require('gulp-util');
+var minifyCSS = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var sass = require('gulp-ruby-sass');
+var uglify = require('gulp-uglify');
 
-gulp.task('build.parallax', function() {
-  return build(gulp.src([
-      'LICENSE',
-      'source/parallax.js',
-      'source/requestAnimationFrame.js'
-    ]), 'parallax.js');
+// js task
+gulp.task('js', function() {
+  return gulp.src('./js/src/*.js')
+    .pipe(gulp.dest('./js/dist/'))
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./js/dist/'));
 });
 
-gulp.task('build.jquery.parallax', function() {
-  return build(gulp.src([
-      'LICENSE',
-      'source/jquery.parallax.js',
-      'source/requestAnimationFrame.js'
-    ]), 'jquery.parallax.js');
+// styles task
+gulp.task('styles', function() {
+  return sass('./sass', {
+      style: 'expanded',
+      noCache: true
+    })
+    .on('error', function(err) {
+      gutil.beep();
+      console.error(err);
+      this.emit('end');
+    })
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./css/'))
+    .pipe(minifyCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('clean', function() {
-  return gulp.src(['deploy'], {read: false}).pipe(plugins.clean());
-});
+// default task
+gulp.task('default', ['js', 'styles', 'watch']);
 
-gulp.task('build', ['clean'], function() {
-  gulp.start('build.parallax', 'build.jquery.parallax');
-});
-
+// watcher
 gulp.task('watch', function() {
-  gulp.watch('source/**/*.js', ['build']);
+  gulp.watch('./js/src/*.js', ['js']);
+  gulp.watch('./sass/*.scss', ['styles']);
 });
-
-gulp.task('default', ['build']);
